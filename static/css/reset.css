@@ -1,0 +1,188 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: 200;
+    line-height: 1;
+    vertical-align: baseline;
+    font-family: 'PingFang SC', 'STHeiti', 'Arial', 'Microsoft YaHei', 'SimSun';
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: none;
+}
+fieldset,img {
+  border:0;
+}
+iframe {
+  display:block;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+th {
+  text-align:inherit;
+}
+del {
+  text-decoration:line-through;
+}
+address,caption,cite,code,dfn,em,th,var {
+  font-style:normal;
+  font-weight:500;
+}
+ol,ul {
+  list-style:none;
+}
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* custom */
+a {
+    color: #7e8c8d;
+    text-decoration: none;
+    -webkit-backface-visibility: hidden;
+}
+a:link {
+  color: #333;
+}
+a:active {
+  color: #333
+}
+a:visited {
+  color: #333
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active{
+  color: #333;
+}
+ins,a {
+  text-decoration:none;
+}
+li {
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    width: 5px;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 6px;
+}
+body {
+    font: normal 100% SimSun;
+    line-height: 1;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+.clearfix:after {
+  visibility:hidden;
+  display:block;
+  font-size:0;
+  content:" ";
+  clear:both;
+  height:0;
+}
+.clearfix {
+  zoom:1; /* for IE6 IE7 */
+}
+body .fn-hide {
+  display:none;
+}
+.fn-left,
+.fn-right {
+  display:inline;
+}
+.fn-left {
+  float:left;
+}
+.fn-right {
+  float:right;
+}
+.fn-text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.fn_linear {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#f1f1f1));
+  background: -moz-linear-gradient(top, #fcfcfc, #f1f1f1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f1f1f1');
+  background:-o-linear-gradient(top, #fcfcfc, #f1f1f1);
+  background:-ms-linear-gradient(top, #fcfcfc, #f1f1f1);
+  background: linear-gradient(to bottom, #fcfcfc, #f1f1f1);
+}
+.fn_linear_light {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#f9f9f9));
+  background: -moz-linear-gradient(top, #fcfcfc, #f9f9f9);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f9f9f9');
+  background:-o-linear-gradient(top, #fcfcfc, #f9f9f9);
+  background:-ms-linear-gradient(top, #fcfcfc, #f9f9f9);
+  background: linear-gradient(to bottom, #fcfcfc, #f9f9f9);
+}
+.fn_rmb {
+  font-family: arial;
+  font-style: normal;
+  padding-right: 4px;
+}
+.fn_webkit_adjust {
+  -webkit-text-size-adjust: none;
+}

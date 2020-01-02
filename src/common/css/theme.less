@@ -1,0 +1,62 @@
+.theme(@backcolor: #EEA2AD,@fcolor: white) {
+  .home-title-text {
+    color: @fcolor;
+  }
+  .boxLayout {
+    & ul {
+      & li {
+        & span.icon {
+          color: @fcolor;
+        }
+        & span.name {
+          color: @fcolor;
+        }
+      }
+    }
+  }
+  .triangle_border_up {
+    border-color:transparent transparent #333;/*透明 透明  灰*/
+  }
+  .triangle_border_up span {
+    border-color:transparent transparent #fc0;/*透明 透明  黄*/
+  }
+  .homeContent {
+    .data {
+      .countTable {
+        .countTable-content {
+          .tabCtr {
+            & ul {
+              & li {
+                color: #4dc2f8;
+                & span {
+                  background-color: #4dc2f8;
+                }
+              }
+              & li.current {
+                color: @fcolor;
+              }
+            }
+          }
+          & table.gridTable {
+            color:#333333;
+            border-color: #4dc2f8;
+            & tr:first-child td {
+              color: #4dc2f8;
+            }
+            & th {
+              border-color: #4dc2f8;
+              color: #4dc2f8;
+            }
+            & td {
+              border-color: #4dc2f8;
+              color: @fcolor;
+            }
+            .maxTable {
+              border-top: 10px solid #eb6100;
+            }
+          }
+        }
+      }
+    }
+  }
+}
